@@ -18,7 +18,7 @@ body {
   display: flex;
 }
 
-input.button {
+.input {
   height: 40px;
   width: 90%;
   border-radius: 5px;
@@ -28,7 +28,7 @@ input.button {
   font-size: 16px;
 }
 
-button {
+.inputName {
   height: 50px;
   width: 10%;
   border-radius: 5px;
@@ -48,4 +48,15 @@ button:hover {
   width: 100%;
   border-bottom: 2px solid black;
   overflow-y: scroll;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputName {
+  margin-left: 10px;
+  width: 80px;
 }

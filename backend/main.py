@@ -9,8 +9,8 @@ async def websocket_endpoint(websocket: WebSocket, username: str):
 
     try:
         while True:
-            data = await websocket.receive_text()
-            await manager.broadcast(f"User {username} says: {data}")
+            message = await websocket.receive_text()
+            await manager.broadcast(f"{username}-{message}")
     except WebSocketDisconnect:
         manager.disconnect(websocket)
         await manager.broadcast(f"User {username} disconnected")
