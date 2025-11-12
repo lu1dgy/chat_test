@@ -1,0 +1,16 @@
+.message {
+  width: 300px;
+}
+
+.person {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 15px;
+  color: #fff;
+  background-color: grey;
+  min-height: 50px;
+  padding: 10px;
+}
